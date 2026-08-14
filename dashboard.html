@@ -1,67 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Metadata configuration for character encoding and responsive layout -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduPlan Timetable Solutions | Dashboard</title>
-</head>
-<body>
-
-    <!-- Header / Navigation -->
+  </head>
+  <body>
+    <!-- Header and Global Navigation Menu -->
     <header>
-        <div class="logo">EduPlan Timetable Solutions</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">EduPlan Timetable Solutions</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-</body>
-</html>
-<main>
-       <main>
-        <h1>Interactive Timetable Dashboard</h1>
-        <p>Welcome to your weekly schedule manager. View your classes and daily tasks below.</p>
+    <!-- Main Content Area: User Dashboard and Timetable Grid -->
+    <main>
+      <h1>Student Dashboard</h1>
+      <p>
+        Welcome back! Manage your active academic modules and weekly schedules
+        below.
+      </p>
 
+      <!-- Summary Statistics / Quick Info Section -->
+      <section class="dashboard-stats">
+        <h2>Overview</h2>
+        <p>Active Modules: 5 | Upcoming Deadlines: 2</p>
+      </section>
 
+      <!-- Interactive Timetable Schedule Section -->
+      <section class="timetable-grid">
+        <h2>Weekly Timetable</h2>
         <table border="1">
+          <thead>
             <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00 - 10:00</td>
+              <td>Web Development</td>
+              <td>Mathematics</td>
+              <td>Information Systems</td>
+              <td>Web Development</td>
+              <td>Software Design</td>
             </tr>
             <tr>
-                <td>08:00 AM</td>
-                <td>Math</td>
-                <td>English</td>
-                <td>Biology</td>
-                <td>Physics</td>
-                <td>Coding</td>
+              <td>10:30 - 12:30</td>
+              <td>Database Design</td>
+              <td>Programming Logic</td>
+              <td>Mathematics</td>
+              <td>Database Design</td>
+              <td>Free Period</td>
             </tr>
-            <tr>
-                <td>09:00 AM</td>
-                <td>Coding</td>
-                <td>Lab</td>
-                <td>Free Period</td>
-                <td>Math</td>
-                <td>Design</td>
-            </tr>
-            <tr>
-                <td>10:00 AM</td>
-                <td>Break</td>
-                <td>Break</td>
-                <td>Break</td>
-                <td>Break</td>
-                <td>Break</td>
-            </tr>
+          </tbody>
         </table>
+      </section>
     </main>
 
-</body>
+    <!-- Footer Component -->
+    <footer>
+      <p>&copy; 2026 EduPlan Timetable Solutions. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

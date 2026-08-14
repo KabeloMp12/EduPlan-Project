@@ -1,43 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Metadata configuration -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduPlan Timetable Solutions | Contact</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
+    <!-- Header and Navigation Menu -->
     <header>
-        <div class="logo">EduPlan Timetable Solutions</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">EduPlan Timetable Solutions</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-<main>
-        <h1>Contact Support</h1>
-        <p>Have questions about your timetable or need assistance? Reach out to our support team below.</p>
-    <form>
-            <div>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
+
+    <!-- Main Content Area: Contact Support and Locations -->
+    <main>
+      <h1>Contact Support</h1>
+      <p>
+        Reach out to our team or visit one of our operational office locations
+        below.
+      </p>
+
+      <!-- Multiple Physical Locations Section (Rubric Requirement) -->
+      <section class="locations">
+        <h2>Our Offices</h2>
+        <div>
+          <h3>Johannesburg Main Branch</h3>
+          <p>123oxford Road, Rosebank, Johannesburg, 2196</p>
+        </div>
+        <div>
+          <h3>Pretoria Support Center</h3>
+          <p>45 Church Street, Pretoria Central, Pretoria, 0002</p>
+        </div>
+      </section>
+
+      <!-- Direct Customer Feedback Form -->
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
         </form>
+      </section>
     </main>
-<footer>
-        <p>&copy; 2026 EduPlan Timetable Solutions. All rights reserved.</p>
+
+    <!-- Footer Component -->
+    <footer>
+      <p>&copy; 2026 EduPlan Timetable Solutions. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

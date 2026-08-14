@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Metadata configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduPlan Timetable Solutions | Enquiry</title>
   </head>
   <body>
+    <!-- Header and Navigation Menu -->
     <header>
       <div class="logo">EduPlan Timetable Solutions</div>
       <nav>
@@ -13,37 +15,56 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="enquiry.html">Enquiry</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Main Content Area: Customer Enquiry Section -->
     <main>
-      <h1>Service Enquiry</h1>
+      <h1>Service & Support Enquiry</h1>
       <p>
-        Submit your product or service enquiries below, or inquire about
-        becoming a sponsor or volunteer.
+        Submit your product enquiries below, or request information regarding
+        sponsorship and volunteering opportunities.
       </p>
+
+      <!-- User Input Enquiry Form -->
       <form>
+        <!-- Visitor Name Field -->
         <div>
-          <label for="enquiry-name">Name:</label>
-          <input type="text" id="enquiry-name" name="name" />
+          <label for="enquiry-name">Full Name:</label>
+          <input type="text" id="enquiry-name" name="name" required />
         </div>
+
+        <!-- Enquiry Category Selection -->
         <div>
           <label for="enquiry-type">Enquiry Type:</label>
           <select id="enquiry-type" name="enquiry-type">
             <option value="service">Service Information</option>
-            <option value="sponsor">Sponsorship</option>
-            <option value="volunteer">Volunteer</option>
+            <option value="sponsor">Sponsorship Opportunity</option>
+            <option value="volunteer">Volunteer Program</option>
           </select>
         </div>
+
+        <!-- Detailed Message Box -->
         <div>
-          <label for="enquiry-msg">Details:</label>
-          <textarea id="enquiry-msg" name="message" rows="4"></textarea>
+          <label for="enquiry-msg">Message Details:</label>
+          <textarea
+            id="enquiry-msg"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
         </div>
+
+        <!-- Form Submission Action Button -->
         <button type="submit">Submit Enquiry</button>
       </form>
     </main>
+
+    <!-- Footer Component -->
     <footer>
       <p>&copy; 2026 EduPlan Timetable Solutions. All rights reserved.</p>
     </footer>

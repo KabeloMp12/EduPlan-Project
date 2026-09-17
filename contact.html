@@ -5,61 +5,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduPlan Timetable Solutions | Contact</title>
+    <!-- Moved stylesheet link to the head -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header and Navigation Menu -->
     <header>
-      <div class="logo">EduPlan Timetable Solutions</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="enquiry.html">Enquiry</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">Edu<span>Plan</span></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content Area: Contact Support and Locations -->
     <main>
       <h1>Contact Support</h1>
-      <p>
+      <p style="margin-bottom: 2rem">
         Reach out to our team or visit one of our operational office locations
         below.
       </p>
 
-      <!-- Multiple Physical Locations Section (Rubric Requirement) -->
-      <section class="locations">
+      <!-- Multiple Physical Locations Section -->
+      <section style="margin-bottom: 3rem">
         <h2>Our Offices</h2>
-        <div>
-          <h3>Johannesburg Main Branch</h3>
-          <p>123oxford Road, Rosebank, Johannesburg, 2196</p>
-        </div>
-        <div>
-          <h3>Pretoria Support Center</h3>
-          <p>45 Church Street, Pretoria Central, Pretoria, 0002</p>
+        <div class="grid-container">
+          <div class="card">
+            <h3>Johannesburg Main Branch</h3>
+            <p>123 Oxford Road, Rosebank, Johannesburg, 2196</p>
+          </div>
+          <div class="card">
+            <h3>Pretoria Support Center</h3>
+            <p>45 Church Street, Pretoria Central, Pretoria, 0002</p>
+          </div>
         </div>
       </section>
 
       <!-- Direct Customer Feedback Form -->
-      <section class="contact-form">
+      <section class="form-card">
         <h2>Send Us a Message</h2>
         <form>
-          <div>
+          <div class="form-group">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required />
           </div>
-          <div>
+          <div class="form-group">
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required />
           </div>
-          <div>
+          <div class="form-group">
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn" style="width: 100%">
+            Send Message
+          </button>
         </form>
       </section>
     </main>
